@@ -42,12 +42,12 @@ header {
 .container {
   width: 90%;
   max-width: 900px;
-  margin: 0 auto;
 }
 
 .container-nav {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 @media (max-width: 675px) {
@@ -105,4 +105,8 @@ nav a:focus {
   nav li {
     margin: 0.5em 0;
   }
+}
+
+img {
+  width: 500px;
 }
