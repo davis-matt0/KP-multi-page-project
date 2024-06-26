@@ -7,17 +7,36 @@
 body {
   margin: 0;
   font-family: "Ubuntu", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
 }
 
 /* ==================
 Typography
 ================== */
 
-h1 {
+h1,
+h2 {
   font-family: "Lora", serif;
-  font-size: 2rem;
   font-weight: 400;
+}
+
+h1 {
+  font-size: 2rem;
   margin: 0;
+  color: #143774;
+}
+
+strong {
+  font-weight: 700;
+}
+
+a {
+  color: #1792d2;
+}
+
+a:hover,
+a:focus {
   color: #143774;
 }
 
@@ -28,6 +47,34 @@ h1 {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-top: 0;
+}
+
+.article-title {
+  font-size: 1.5rem;
+  color: #143774;
+}
+
+.article-read-more,
+.article-info {
+  font-size: 0.875rem;
+}
+
+.article-read-more {
+  color: #1792d2;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+  text-decoration: underline;
+  color: #143774;
+}
+
+.article-info,
+.article-body {
+  color: #707070;
 }
 
 /* ==================
@@ -42,12 +89,24 @@ header {
 .container {
   width: 90%;
   max-width: 900px;
+  margin: 0 auto;
 }
 
-.container-nav {
+.container-flex {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+}
+
+.article-featured {
+  /* width: 70%; */
+}
+
+.featured-img {
+  width: 100%;
+}
+
+.sidebar {
+  /* width: 20%; */
 }
 
 @media (max-width: 675px) {
@@ -107,6 +166,6 @@ nav a:focus {
   }
 }
 
-img {
-  width: 500px;
+.article-img {
+  width: 50%;
 }
