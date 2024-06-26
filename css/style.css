@@ -11,14 +11,21 @@ body {
   font-weight: 300;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 /* ==================
 Typography
 ================== */
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Lora", serif;
   font-weight: 400;
+  margin-top: 0;
 }
 
 h1 {
@@ -77,14 +84,13 @@ a:focus {
   color: #707070;
 }
 
+.article-info {
+  margin: 2em 0;
+}
+
 /* ==================
 Layout
 ================== */
-
-header {
-  background-color: #f8f8f8;
-  padding: 2em 0;
-}
 
 .container {
   width: 90%;
@@ -94,27 +100,31 @@ header {
 
 .container-flex {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
-.article-featured {
-  /* width: 70%; */
+header {
+  background-color: #f8f8f8;
+  padding: 2em 0;
+  text-align: center;
 }
 
-.featured-img {
-  width: 100%;
-}
-
-.sidebar {
-  /* width: 20%; */
-}
-
-@media (max-width: 675px) {
-  .container-nav {
-    flex-direction: column;
+@media (min-width: 675px) {
+  .container-flex {
+    flex-direction: row;
   }
+
   header {
-    text-align: center;
+    text-align: left;
+  }
+
+  main {
+    width: 75%;
+  }
+
+  aside {
+    width: 20%;
   }
 }
 
@@ -166,6 +176,26 @@ nav a:focus {
   }
 }
 
-.article-img {
-  width: 50%;
+/* ==================
+Articles
+================== */
+
+.article-featured {
+  border-bottom: 1px solid #707070;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+.article-recent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.article-recent-main {
+  order: 2;
+}
+
+.article-recent-secondary {
+  order: 1;
 }
