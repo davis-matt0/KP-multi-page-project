@@ -110,11 +110,10 @@ a:focus {
 
 .about-me-section {
   color: #1792d2;
-  margin: 0;
 }
 
 .about-me-body {
-  margin-bottom: 0.5em;
+  margin-top: 0;
 }
 
 /* ==================
