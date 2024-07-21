@@ -108,6 +108,15 @@ a:focus {
   margin: 0;
 }
 
+.about-me-section {
+  color: #1792d2;
+  margin: 0;
+}
+
+.about-me-body {
+  margin-bottom: 0.5em;
+}
+
 /* ==================
 Layout
 ================== */
@@ -245,6 +254,18 @@ Articles
   order: 1;
 }
 
+.about-me {
+  border-bottom: none;
+}
+
+.about-me-featured {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 3em;
+}
+
 @media (min-width: 675px) {
   .article-recent {
     flex-direction: row;
@@ -281,6 +302,7 @@ Widgets
   width: 100%;
   height: 150px;
   object-fit: cover;
+  object-position: bottom;
 }
 
 .widget-recent-post {
