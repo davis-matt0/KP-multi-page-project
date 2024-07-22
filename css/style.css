@@ -9,6 +9,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.125rem;
   font-weight: 300;
+  line-height: 1.6;
 }
 
 img {
@@ -51,9 +52,10 @@ a:focus {
   color: #1792d2;
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 2px;
   text-transform: uppercase;
   margin-top: 0;
+  text-align: center;
 }
 
 .article-title {
@@ -70,7 +72,7 @@ a:focus {
   text-decoration: none;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 2px;
 }
 
 .article-read-more:hover,
@@ -94,6 +96,7 @@ a:focus {
   font-size: 1rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+  line-height: 1.4;
 }
 
 .widget-body {
@@ -106,6 +109,7 @@ a:focus {
   order: -3;
   font-size: 1rem;
   margin: 0;
+  line-height: 1.4;
 }
 
 .about-me-section {
@@ -114,6 +118,15 @@ a:focus {
 
 .about-me-body {
   margin-top: 0;
+}
+
+.footer-title {
+  font-weight: 700;
+}
+
+.footer-title,
+.copyright {
+  opacity: 50%;
 }
 
 /* ==================
@@ -144,11 +157,6 @@ footer {
   padding: 2em 0;
   color: white;
   text-align: center;
-}
-
-.footer-title,
-.copyright {
-  opacity: 54%;
 }
 
 @media (min-width: 675px) {
@@ -191,7 +199,7 @@ nav a {
   color: #707070;
   font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 1px;
   text-transform: uppercase;
   padding: 0.3em 0;
 }
